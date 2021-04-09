@@ -1,0 +1,13 @@
+server:
+  port: 8022
+spring:
+  application:
+    name: rabbitmq-consumer
+  # 配置rabbitmq服务器
+  rabbitmq:
+    host: 1.15.156.97
+    port: 5673
+    username: zh
+    password: zh
+    #虚拟host 可以不设置,使用server默认host
+    #virtual-host: JCcccHost

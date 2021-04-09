@@ -1,0 +1,13 @@
+server:
+  port: 8022
+spring:
+  application:
+    name: rabbitmq-consumer
+  # ����rabbitmq������
+  rabbitmq:
+    host: 1.15.156.97
+    port: 5673
+    username: zh
+    password: zh
+    #����host ���Բ�����,ʹ��serverĬ��host
+    #virtual-host: JCcccHost

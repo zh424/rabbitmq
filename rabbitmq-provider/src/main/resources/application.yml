@@ -1,0 +1,17 @@
+server:
+  port: 8021
+spring:
+  application:
+    name: rabbitmq-provider
+  # 配置rabbitmq服务器
+  rabbitmq:
+    host: 1.15.156.97
+    port: 5673
+    username: zh
+    password: zh
+    #虚拟host 可以不设置,使用server默认host: /
+    #virtual-host: JCcccHost
+    #确认消息已发送到交换机(Exchange),如果在配置确认回调，测试发现无法触发回调函数，那么存在原因也许是因为版本导致的配置项不起效，可以改为publisher-confirms: true
+    publisher-confirm-type: correlated
+    #确认消息已发送到队列(Queue)
+    publisher-returns: true
